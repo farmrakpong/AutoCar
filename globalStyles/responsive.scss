@@ -1,0 +1,18 @@
+$tablet: '(max-width: 979px)';
+$mobile: '(max-width: 767px)';
+$laptop: '(max-width: 1024px)';
+$size1350: '(max-width: 1350px)';
+$size1260: '(max-width: 1260px)';
+$size1199: '(max-width: 1199px)';
+$size1065: '(max-width: 1065px)';
+$size900: '(max-width: 900px)';
+$size575: '(max-width: 575px)';
+$size425: '(max-width: 425px)';
+$size375: '(max-width: 375px)';
+$size768: '(max-width: 768px)';
+
+@mixin respond-to($media) {
+  @media only screen and #{$media} {
+      @content;
+  }
+}
